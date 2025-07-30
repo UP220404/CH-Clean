@@ -1,0 +1,743 @@
+/* Variables de color actualizadas */
+:root {
+  --primary: #2d5a3d;  /* Verde oscuro elegante */
+  --primary-dark: #1a3526;
+  --primary-light: #4a7c59;
+  --primary-lightest: #e8f5ea;
+  --accent: #c9a876;   /* Dorado del logo */
+  --accent-dark: #b8965f;
+  --accent-light: #d4b886;
+  --accent-lightest: #f5f1e8;
+  --light: #f8f9fa;
+  --dark: #0a0f0a;
+  --white: #ffffff;
+  --gray: #e9ecef;
+  --gray-dark: #6c757d;
+  --glass: rgba(255, 255, 255, 0.1);
+  --shadow: rgba(0, 0, 0, 0.15);
+}
+
+/* Reset y estilos base modernos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: var(--dark);
+  line-height: 1.7;
+  background: linear-gradient(135deg, var(--light) 0%, #f1f3f4 100%);
+  font-weight: 400;
+  overflow-x: hidden;
+}
+
+/* Tipografía moderna */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  color: var(--primary);
+  line-height: 1.3;
+  margin-bottom: 1rem;
+}
+
+.display-1, .display-2, .display-3, .display-4, .display-5 {
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--primary), var(--primary-light), var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Utility Classes Mejoradas */
+.divider {
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-light));
+  border-radius: 2px;
+  box-shadow: 0 2px 10px rgba(201, 168, 118, 0.3);
+}
+
+.bg-primary-light {
+  background: linear-gradient(135deg, var(--primary-lightest), rgba(201, 168, 118, 0.1));
+}
+
+.text-accent {
+  color: var(--accent);
+}
+
+.btn-accent {
+  background: linear-gradient(135deg, var(--accent), var(--accent-light));
+  color: var(--white);
+  border: none;
+  font-weight: 600;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 8px 25px rgba(201, 168, 118, 0.3);
+}
+
+.btn-accent:hover {
+  background: linear-gradient(135deg, var(--accent-dark), var(--accent));
+  color: var(--white);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 35px rgba(201, 168, 118, 0.4);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  border: none;
+  font-weight: 600;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 8px 25px rgba(45, 90, 61, 0.3);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+  transform: translateY(-3px);
+  box-shadow: 0 12px 35px rgba(45, 90, 61, 0.4);
+}
+
+/* Glass Morphism Effects */
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+}
+
+.glass-dark {
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+}
+
+/* Hero Section Ultra Moderno */
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  background: radial-gradient(ellipse at center, #1a3526 0%, var(--dark) 70%);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="0.5" fill="%23c9a876" opacity="0.05"/><circle cx="75" cy="75" r="0.3" fill="%234a7c59" opacity="0.03"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+  animation: float 20s ease-in-out infinite;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(45, 90, 61, 0.8) 0%, rgba(10, 15, 10, 0.9) 100%);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hero-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, rgba(201, 168, 118, 0.2), rgba(212, 184, 134, 0.2));
+  border: 1px solid rgba(201, 168, 118, 0.3);
+  padding: 12px 24px;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  color: var(--accent-light);
+  margin-bottom: 30px;
+  backdrop-filter: blur(10px);
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.hero-section h1 {
+  font-size: clamp(3.5rem, 8vw, 7rem);
+  font-weight: 900;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  line-height: 1.1;
+  margin-bottom: 30px;
+  background: linear-gradient(135deg, #ffffff, #e0e0e0, var(--accent-light));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-section h1 span {
+  color: var(--accent);
+  text-shadow: 0 0 30px rgba(201, 168, 118, 0.5);
+}
+
+.hero-section .lead {
+  font-size: 1.3rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 40px;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+/* Page Header Moderno */
+.page-header {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.page-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1" fill="%23ffffff" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23dots)"/></svg>');
+}
+
+/* Cards con Diseño Avanzado */
+.service-card, .feature-card, .value-card, .team-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 24px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  overflow: hidden;
+  position: relative;
+}
+
+.service-card::before, .feature-card::before, .value-card::before, .team-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-light), var(--primary-light));
+}
+
+.service-card:hover, .feature-card:hover, .value-card:hover, .team-card:hover {
+  transform: translateY(-15px) scale(1.02);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+  border-color: rgba(201, 168, 118, 0.3);
+}
+
+.card-img-top {
+  border-radius: 20px 20px 0 0;
+  transition: all 0.4s ease;
+  height: 200px;
+  object-fit: cover;
+}
+
+.service-card:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+/* Feature Icons Mejorados */
+.feature-icon, .value-icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, var(--primary-lightest), rgba(201, 168, 118, 0.1));
+  border: 2px solid rgba(201, 168, 118, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+  position: relative;
+}
+
+.feature-icon:hover, .value-icon:hover {
+  background: linear-gradient(135deg, var(--accent), var(--accent-light));
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.value-number {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, var(--accent), var(--accent-light));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.5rem;
+  color: white;
+  box-shadow: 0 8px 25px rgba(201, 168, 118, 0.3);
+}
+
+/* Team Cards Especiales */
+.team-img {
+  width: 180px;
+  height: 180px;
+  position: relative;
+  overflow: hidden;
+  border: 4px solid var(--accent-light);
+  box-shadow: 0 15px 35px rgba(201, 168, 118, 0.3);
+}
+
+.team-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.4s ease;
+}
+
+.team-card:hover .team-img img {
+  transform: scale(1.1);
+}
+
+/* Contact Form Moderno */
+.contact-info {
+  background: linear-gradient(135deg, rgba(248, 249, 250, 0.95), rgba(241, 243, 244, 0.95));
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.contact-form {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.form-control, .form-select {
+  border-radius: 15px;
+  padding: 18px 20px;
+  border: 2px solid rgba(201, 168, 118, 0.2);
+  background: rgba(255, 255, 255, 0.9);
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 0.25rem rgba(201, 168, 118, 0.25);
+  background: white;
+}
+
+.form-floating label {
+  color: var(--gray-dark);
+  font-weight: 500;
+}
+
+/* Animaciones Avanzadas */
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(1deg); }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate {
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.animate-left {
+  animation: slideInLeft 0.8s ease forwards;
+}
+
+.animate-right {
+  animation: slideInRight 0.8s ease forwards;
+}
+
+/* Navbar Moderno con Glass Morphism */
+.navbar {
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.navbar-brand {
+  font-weight: 800;
+  transition: all 0.3s ease;
+}
+
+.navbar-brand:hover {
+  transform: scale(1.05);
+}
+
+.nav-link {
+  font-weight: 600;
+  position: relative;
+  transition: all 0.3s ease;
+  padding: 12px 16px !important;
+}
+
+.nav-link:hover {
+  color: var(--accent) !important;
+  transform: translateY(-2px);
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-light));
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after, .nav-link.active::after {
+  width: calc(100% - 32px);
+}
+
+/* Sections con Backgrounds Mejorados */
+.bg-light {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 50%, #f1f3f4 100%) !important;
+}
+
+.bg-primary {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%) !important;
+}
+
+.bg-accent {
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-light) 100%) !important;
+}
+
+/* Footer Moderno */
+footer {
+  background: linear-gradient(135deg, var(--dark) 0%, #1a1a1a 100%);
+  position: relative;
+}
+
+footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="footergrain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="20" cy="20" r="0.5" fill="%23c9a876" opacity="0.05"/><circle cx="80" cy="80" r="0.3" fill="%234a7c59" opacity="0.03"/></pattern></defs><rect width="100" height="100" fill="url(%23footergrain)"/></svg>');
+}
+
+/* Responsive Design Mejorado */
+@media (max-width: 768px) {
+  .hero-section {
+    min-height: 90vh;
+    padding: 4rem 1rem;
+  }
+  
+  .hero-section h1 {
+    font-size: 2.5rem;
+  }
+  
+  .page-header h1 {
+    font-size: 2.5rem;
+  }
+  
+  .service-card, .feature-card, .value-card {
+    margin-bottom: 2rem;
+  }
+  
+  .nav-menu {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem 0;
+  }
+  
+  .logo-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-badge {
+    font-size: 0.8rem;
+    padding: 8px 16px;
+  }
+  
+  .display-4, .display-5 {
+    font-size: 2rem;
+  }
+  
+  .btn {
+    padding: 12px 20px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Elementos interactivos */
+.hover-shadow {
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15) !important;
+  transform: translateY(-8px);
+}
+
+/* Scrollbar personalizada */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--light);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, var(--accent), var(--accent-light));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, var(--accent-dark), var(--accent));
+}
+
+/* Agregar estas reglas al final de tu archivo style.css */
+
+/* Override de colores Bootstrap que están apareciendo en azul */
+
+/* Links y elementos con clase text-primary */
+.text-primary {
+  color: var(--primary) !important;
+}
+
+/* Botones primarios de Bootstrap */
+.btn-primary {
+  background: linear-gradient(135deg, var(--primary), var(--primary-light)) !important;
+  border-color: var(--primary) !important;
+  color: white !important;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+  background: linear-gradient(135deg, var(--primary-dark), var(--primary)) !important;
+  border-color: var(--primary-dark) !important;
+  color: white !important;
+}
+
+/* Botones outline-primary */
+.btn-outline-primary {
+  color: var(--primary) !important;
+  border-color: var(--primary) !important;
+  background: transparent !important;
+}
+
+.btn-outline-primary:hover, .btn-outline-primary:focus, .btn-outline-primary:active {
+  background: var(--primary) !important;
+  border-color: var(--primary) !important;
+  color: white !important;
+}
+
+/* Borders con clase border-primary */
+.border-primary {
+  border-color: var(--primary) !important;
+}
+
+/* Hero badges que usan border-primary */
+.hero-badge.border-primary {
+  border-color: var(--primary) !important;
+  color: var(--primary) !important;
+}
+
+/* Enlaces de navegación activos */
+.nav-link.active {
+  color: var(--primary) !important;
+}
+
+/* Icons con color primary que aparecen en azul */
+.text-primary i, 
+h1.text-primary, 
+h2.text-primary, 
+h3.text-primary, 
+h4.text-primary, 
+h5.text-primary, 
+h6.text-primary {
+  color: var(--primary) !important;
+}
+
+/* Checks y elementos de lista */
+.text-accent {
+  color: var(--accent) !important;
+}
+
+/* Override específico para elementos que Bootstrap está forzando en azul */
+*[class*="text-primary"] {
+  color: var(--primary) !important;
+}
+
+*[class*="btn-primary"] {
+  background: linear-gradient(135deg, var(--primary), var(--primary-light)) !important;
+  border-color: var(--primary) !important;
+}
+
+/* Asegurar que los iconos dentro de elementos con text-primary sean del color correcto */
+.text-primary .fas, 
+.text-primary .far, 
+.text-primary .fab {
+  color: var(--primary);
+}
+
+/* Links hover state */
+a:hover {
+  color: var(--accent);
+}
+
+/* Focus states para elementos de formulario */
+.form-control:focus, 
+.form-select:focus {
+  border-color: var(--accent) !important;
+  box-shadow: 0 0 0 0.25rem rgba(201, 168, 118, 0.25) !important;
+}
+
+/* Elementos específicos que pueden estar en azul */
+.display-5.fw-bold.text-primary {
+  color: var(--primary) !important;
+}
+
+/* Footer links */
+footer a {
+  color: var(--accent-light);
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: var(--accent);
+}
+
+.hero-title-shimmer {
+    font-size: clamp(3.5rem, 8vw, 7rem);
+    font-weight: 900;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    line-height: 1.1;
+    margin-bottom: 30px;
+    text-align: center;
+    
+    background: linear-gradient(
+        90deg,
+        rgba(255,255,255,0.4) 0%,
+        rgba(201,168,118,1) 25%,
+        rgba(255,255,255,1) 50%,
+        rgba(201,168,118,1) 75%,
+        rgba(255,255,255,0.4) 100%
+    );
+    background-size: 200% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: heroShimmer 4s ease-in-out infinite;
+    
+    /* Fallback para navegadores que no soporten background-clip */
+    color: white;
+}
+
+.hero-title-shimmer .accent-span {
+    background: linear-gradient(
+        90deg,
+        rgba(201,168,118,0.6) 0%,
+        rgba(255,255,255,1) 25%,
+        rgba(201,168,118,1) 50%,
+        rgba(255,255,255,1) 75%,
+        rgba(201,168,118,0.6) 100%
+    );
+    background-size: 200% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: heroShimmer 4s ease-in-out infinite 0.5s;
+}
+
+@keyframes heroShimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+}
+
+/* CSS adicional para la sección About con logo */
+.logo-display {
+    position: relative;
+    display: inline-block;
+}
+
+.logo-display::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background: linear-gradient(45deg, var(--accent), var(--primary-light), var(--accent));
+    border-radius: 25px;
+    opacity: 0;
+    transition: all 0.3s ease;
+    z-index: -1;
+}
+
+.logo-display:hover::before {
+    opacity: 0.1;
+    transform: rotate(5deg);
+}
+
+.logo-display img {
+    filter: drop-shadow(0 4px 15px rgba(45, 90, 61, 0.2));
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.logo-display:hover img {
+    filter: drop-shadow(0 8px 25px rgba(45, 90, 61, 0.3));
+}
+
+/* Alternativa con animación sutil de pulso */
+@keyframes logoGlow {
+    0%, 100% {
+        box-shadow: 0 8px 30px rgba(45, 90, 61, 0.2);
+    }
+    50% {
+        box-shadow: 0 8px 30px rgba(201, 168, 118, 0.3);
+    }
+}
+
+.logo-display img {
+    animation: logoGlow 3s ease-in-out infinite;
+}

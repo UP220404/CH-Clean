@@ -1,0 +1,48 @@
+{
+  "name": "ch-clean-backend",
+  "version": "1.0.0",
+  "description": "Backend para CH Clean - Sistema de formularios y emails",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "NODE_ENV=development nodemon app.js",
+    "prod": "NODE_ENV=production node app.js",
+    "test": "NODE_ENV=development node app.js",
+    "test-email": "node test-email.js",
+    "debug": "NODE_ENV=development node --inspect app.js"
+  },
+  "keywords": [
+    "express",
+    "nodejs",
+    "email",
+    "forms",
+    "cleaning-service"
+  ],
+  "author": "Lenin Silva",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemailer": "^6.9.7",
+    "dotenv": "^16.3.1",
+    "cors": "^2.8.5",
+    "helmet": "^7.1.0",
+    "express-rate-limit": "^7.1.5",
+    "express-validator": "^7.0.1",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tu-usuario/ch-clean-backend.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tu-usuario/ch-clean-backend/issues"
+  },
+  "homepage": "https://cielitohome.com"
+}

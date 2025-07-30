@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - Cielito Home Clean</title>
+    <meta name="description" content="Conoce nuestros servicios profesionales de limpieza residencial y corporativa adaptados a tus necesidades específicas">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/servicios.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo-container">
+    <div class="logo-placeholder" style="width: 60px; height: 60px; border-radius: 15px; overflow: hidden; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 15px rgba(45, 90, 61, 0.3);">
+        <img src="images/logo.png" alt="Cielito Home Clean Logo" style="width: 100%; height: 100%; object-fit: contain; background: white; padding: 5px;">
+    </div>
+    <div class="logo-text">
+        <span class="logo-main">CIELITO HOME</span>
+        <span class="logo-sub">CLEAN</span>
+    </div>
+    </div>  
+            
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link">
+                    <i class="fas fa-home"></i>
+                    <span>Inicio</span>
+                </a>
+                <a href="servicios.html" class="nav-link active">
+                    <i class="fas fa-broom"></i>
+                    <span>Servicios</span>
+                </a>
+                <a href="nosotros.html" class="nav-link">
+                    <i class="fas fa-users"></i>
+                    <span>Nosotros</span>
+                </a>
+                <a href="contacto.html" class="nav-link nav-cta">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>Contacto</span>
+                </a>
+            </nav>
+
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+<section class="services-hero">
+    <!-- Carrusel de fondo -->
+    <div class="background-carousel">
+        <div class="bg-slide active" style="background-image: url('images/service1.jpg');"></div>
+        <div class="bg-slide" style="background-image: url('images/service2.jpg');"></div>
+        <div class="bg-slide" style="background-image: url('images/service3.jpg');"></div>
+        <div class="bg-slide" style="background-image: url('images/service4.jpg');"></div>
+        <div class="bg-slide" style="background-image: url('images/service5.jpg');"></div>
+        <div class="bg-slide" style="background-image: url('images/clean_office.jpg');"></div>
+        <div class="bg-slide" style="background-image: url('images/cocina.jpg');"></div>
+    </div>
+    
+    <!-- Overlay para legibilidad -->
+    <div class="carousel-overlay"></div>
+    
+    <div class="container position-relative">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <div class="section-badge animate-fade-in">Soluciones Profesionales</div>
+                <h1 class="hero-title animate-slide-up">Nuestros Servicios</h1>
+                <p class="hero-subtitle animate-slide-up">Ofrecemos soluciones de limpieza profesional adaptadas a cada necesidad específica, utilizando productos ecológicos y técnicas avanzadas para garantizar resultados excepcionales.</p>
+                <div class="hero-stats animate-fade-in">
+                    <div class="stat-item">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Clientes Satisfechos</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">6</div>
+                        <div class="stat-label">Tipos de Servicio</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Eco-Friendly</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+     <!-- Servicios Principales Section -->
+    <section class="services-grid-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <div class="section-badge">Nuestros Servicios</div>
+                <h2 class="section-title">¿Qué Podemos Hacer<br><span class="text-accent">Por Ti?</span></h2>
+                <p class="section-subtitle">Soluciones de limpieza personalizadas que se adaptan a tus necesidades específicas</p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Limpieza Residencial -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Limpieza Residencial</h3>
+                    <p>Transformamos tu hogar en un espacio impecable con servicios personalizados que incluyen limpieza general, profunda y mantenimiento regular.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Limpieza general y profunda</li>
+                        <li><i class="fas fa-check"></i> Cocinas y baños especializados</li>
+                        <li><i class="fas fa-check"></i> Productos eco-amigables</li>
+                        <li><i class="fas fa-check"></i> Servicio pet-friendly</li>
+                    </ul>
+                    <div class="service-pricing">
+                        <span class="price-label">Desde</span>
+                        <div class="price">$800</div>
+                    </div>
+                    <a href="contacto.html" class="btn-service">
+                        Solicitar Cotización <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Limpieza Corporativa -->
+                <div class="service-card featured">
+                    <div class="featured-badge">Más Popular</div>
+                    <div class="service-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Limpieza Corporativa</h3>
+                    <p>Mantén tu oficina o negocio siempre presentable con nuestros servicios profesionales diseñados para espacios comerciales.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Oficinas y espacios comerciales</li>
+                        <li><i class="fas fa-check"></i> Horarios flexibles</li>
+                        <li><i class="fas fa-check"></i> Desinfección profesional</li>
+                        <li><i class="fas fa-check"></i> Contratos personalizados</li>
+                    </ul>
+                    <div class="service-pricing">
+                        <span class="price-label">Desde</span>
+                        <div class="price">$1,200</div>
+                    </div>
+                    <a href="contacto.html" class="btn-service">
+                        Solicitar Cotización <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Servicios Especializados -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Servicios Especializados</h3>
+                    <p>Soluciones específicas para necesidades particulares como mudanzas, eventos especiales y limpiezas de emergencia.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Limpieza post-mudanza</li>
+                        <li><i class="fas fa-check"></i> Vidrios y ventanales</li>
+                        <li><i class="fas fa-check"></i> Terrazas y exteriores</li>
+                        <li><i class="fas fa-check"></i> Servicios express</li>
+                    </ul>
+                    <div class="service-pricing">
+                        <span class="price-label">Desde</span>
+                        <div class="price">$600</div>
+                    </div>
+                    <a href="contacto.html" class="btn-service">
+                        Solicitar Cotización <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <div class="section-badge">Nuestro Proceso</div>
+                <h2 class="section-title">¿Cómo<br><span class="text-accent">Trabajamos?</span></h2>
+                <p class="section-subtitle">Un proceso simple y eficiente diseñado para brindarte la mejor experiencia</p>
+            </div>
+            
+            <div class="process-grid">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h4>Contacto Inicial</h4>
+                    <p>Nos contactas y programamos una evaluación gratuita de tus necesidades específicas.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">
+                        <i class="fas fa-clipboard-list"></i>
+                    </div>
+                    <h4>Evaluación</h4>
+                    <p>Visitamos tu espacio para crear un plan personalizado y cotización exacta.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h4>Programación</h4>
+                    <p>Agendamos el servicio en el horario que mejor se adapte a tu rutina.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <div class="step-icon">
+                        <i class="fas fa-broom"></i>
+                    </div>
+                    <h4>Servicio</h4>
+                    <p>Nuestro equipo realiza el trabajo con los más altos estándares de calidad.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">5</div>
+                    <div class="step-icon">
+                        <i class="fas fa-thumbs-up"></i>
+                    </div>
+                    <h4>Garantía</h4>
+                    <p>Verificamos tu satisfacción y garantizamos la calidad de nuestro trabajo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Planes Section -->
+    <section class="pricing-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <div class="section-badge">Planes Flexibles</div>
+                <h2 class="section-title">Elige el Plan<br><span class="text-accent">Perfecto Para Ti</span></h2>
+                <p class="section-subtitle">Opciones diseñadas para adaptarse a tu estilo de vida y presupuesto</p>
+            </div>
+            
+            <div class="pricing-grid">
+                <!-- Plan Básico -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Plan Básico</h3>
+                        <div class="price">
+                            <span class="currency">$</span>800<span class="period">/servicio</span>
+                        </div>
+                        <p>Perfecto para mantenimiento regular</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Limpieza general completa</li>
+                        <li><i class="fas fa-check"></i> Productos eco-amigables incluidos</li>
+                        <li><i class="fas fa-check"></i> Servicio pet-friendly</li>
+                        <li><i class="fas fa-check"></i> Garantía de satisfacción</li>
+                    </ul>
+                    <a href="contacto.html" class="btn-pricing">Elegir Plan</a>
+                </div>
+
+                <!-- Plan Premium -->
+                <div class="pricing-card featured">
+                    <div class="popular-badge">Recomendado</div>
+                    <div class="pricing-header">
+                        <h3>Plan Premium</h3>
+                        <div class="price">
+                            <span class="currency">$</span>1,500<span class="period">/servicio</span>
+                        </div>
+                        <p>La experiencia completa de limpieza</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Todo del Plan Básico</li>
+                        <li><i class="fas fa-check"></i> Limpieza profunda especializada</li>
+                        <li><i class="fas fa-check"></i> Organización de espacios</li>
+                        <li><i class="fas fa-check"></i> Limpieza de vidrios incluida</li>
+                        <li><i class="fas fa-check"></i> Servicio prioritario</li>
+                    </ul>
+                    <a href="contacto.html" class="btn-pricing">Elegir Plan</a>
+                </div>
+
+                <!-- Plan Personalizado -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Plan Personalizado</h3>
+                        <div class="price">
+                            <span class="currency">$</span>???<span class="period">/servicio</span>
+                        </div>
+                        <p>Diseñado específicamente para ti</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Evaluación personalizada</li>
+                        <li><i class="fas fa-check"></i> Servicios a la medida</li>
+                        <li><i class="fas fa-check"></i> Horarios flexibles</li>
+                        <li><i class="fas fa-check"></i> Frecuencia personalizada</li>
+                        <li><i class="fas fa-check"></i> Descuentos por contratos</li>
+                    </ul>
+                    <a href="contacto.html" class="btn-pricing">Solicitar Cotización</a>
+                </div>
+            </div>
+            
+            <div class="pricing-note">
+                <p><i class="fas fa-info-circle"></i> Los precios pueden variar según el tamaño del espacio y servicios específicos requeridos. Contáctanos para una cotización exacta.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>¿Listo para Transformar tus Espacios?</h2>
+                <p>Contáctanos hoy y descubre por qué somos la elección preferida para servicios de limpieza profesional en Aguascalientes.</p>
+                <div class="cta-buttons">
+                    <a href="contacto.html" class="btn btn-light">
+                        <i class="fas fa-phone-alt me-2"></i>Solicitar Cotización
+                    </a>
+                    <a href="https://wa.me/524491382712" class="btn btn-outline-light">
+                        <i class="fab fa-whatsapp me-2"></i>WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-section">
+                    <h3>Oficinas</h3>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Potreros+509,+Valle+del+Campestre,+20110+Aguascalientes,+Ags" target="_blank">
+                        <i class="fas fa-map-marker-alt me-2"></i>Potreros 509, Valle del Campestre<br>20110 Aguascalientes, Ags.
+                    </a>
+                </div>
+                
+            
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <a href="tel:4491382712"><i class="fas fa-phone-alt me-2"></i> 449 138 2712</a>
+                <a href="mailto:cielitoclean@cielitohome.com"><i class="fas fa-envelope me-2"></i> cielitoclean@cielitohome.com</a>
+                <a href="#"><i class="fas fa-map-marker-alt me-2"></i> Aguascalientes, México</a>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/cielitohomeclean/?igsh=MWZtMDdqNHR4eXM0cw%3D%3D#" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/524491382712" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Servicios</h3>
+                <a href="servicios.html">Limpieza Residencial</a>
+                <a href="servicios.html">Limpieza Corporativa</a>
+                <a href="servicios.html">Servicios Especializados</a>
+                <a href="servicios.html">Desinfección de Espacios</a>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Horario</h3>
+                <p><i class="far fa-clock me-2"></i> Lunes a Viernes: 8:00 - 16:00</p>
+                <p><i class="far fa-clock me-2"></i> Sábados: 9:00 - 14:00</p>
+                <h3 class="mt-4">Newsletter</h3>
+                <form class="mt-3">
+                    <div class="d-flex">
+                        <input type="email" class="form-control me-2" placeholder="Tu correo" style="border-radius: 25px;">
+                        <button class="btn btn-accent rounded-pill px-3" type="submit">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Cielito Home Clean. Todos los derechos reservados. | 
+            <a href="terminos.html" class="text-accent">Términos</a> | 
+            <a href="privacidad.html" class="text-accent">Privacidad</a> | 
+            <a href="faq.html" class="text-accent">FAQ</a></p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/servicios.js"></script>
+</body>
+</html>

@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas Frecuentes - Cielito Home Clean</title>
+    <meta name="description" content="Preguntas frecuentes sobre nuestros servicios de limpieza profesional">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/faq.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo-container">
+                <div class="logo-placeholder" style="width: 60px; height: 60px; border-radius: 15px; overflow: hidden; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 15px rgba(45, 90, 61, 0.3);">
+                    <img src="images/logo.png" alt="Cielito Home Clean Logo" style="width: 100%; height: 100%; object-fit: contain; background: white; padding: 5px;">
+                </div>
+                <div class="logo-text">
+                    <span class="logo-main">CIELITO HOME</span>
+                    <span class="logo-sub">CLEAN</span>
+                </div>
+            </div>
+            
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link">
+                    <i class="fas fa-home"></i> Inicio
+                </a>
+                <a href="servicios.html" class="nav-link">
+                    <i class="fas fa-broom"></i> Servicios
+                </a>
+                <a href="nosotros.html" class="nav-link">
+                    <i class="fas fa-users"></i> Nosotros
+                </a>
+                <a href="contacto.html" class="nav-link nav-cta">
+                    <i class="fas fa-phone-alt"></i> Contacto
+                </a>
+            </nav>
+            
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="faq-hero">
+        <div class="hero-background">
+            <div class="hero-particles"></div>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <div class="hero-badge animate-fade-in">Centro de Ayuda</div>
+                    <h1 class="hero-title animate-slide-up">Preguntas Frecuentes</h1>
+                    <p class="hero-subtitle animate-slide-up">Encuentra respuestas rápidas a las dudas más comunes sobre nuestros servicios profesionales de limpieza</p>
+                    <div class="hero-stats animate-fade-in">
+                        <div class="stat-item">
+                            <div class="stat-number">15+</div>
+                            <div class="stat-label">Preguntas Respondidas</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">24/7</div>
+                            <div class="stat-label">Disponible Siempre</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Respuestas Útiles</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search FAQ -->
+    <section class="py-5 bg-white">
+        <div class="container">
+            <div class="row justify-content-center mb-4">
+                <div class="col-lg-8 text-center">
+                    <h2 class="h4 text-primary mb-3">¿Tienes alguna pregunta específica?</h2>
+                    <p class="text-muted mb-4">Busca en nuestra base de conocimientos o navega por categorías</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="search-container">
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-text bg-white border-end-0">
+                                <i class="fas fa-search text-primary"></i>
+                            </span>
+                            <input type="text" class="form-control border-start-0 ps-0" placeholder="Escribe tu pregunta aquí..." id="faqSearch">
+                            <button class="btn btn-primary px-4" type="button">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Categories -->
+    <section class="py-4 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="category-filters">
+                        <div class="d-flex justify-content-center flex-wrap gap-3">
+                            <button class="btn btn-category active" data-category="all">
+                                <i class="fas fa-th-large me-2"></i> Todas las Preguntas
+                            </button>
+                            <button class="btn btn-category" data-category="servicios">
+                                <i class="fas fa-broom me-2"></i> Servicios
+                            </button>
+                            <button class="btn btn-category" data-category="precios">
+                                <i class="fas fa-dollar-sign me-2"></i> Precios y Pagos
+                            </button>
+                            <button class="btn btn-category" data-category="programacion">
+                                <i class="fas fa-calendar me-2"></i> Programación
+                            </button>
+                            <button class="btn btn-category" data-category="productos">
+                                <i class="fas fa-leaf me-2"></i> Productos
+                            </button>
+                            <button class="btn btn-category" data-category="otros">
+                                <i class="fas fa-question-circle me-2"></i> Otros
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Content -->
+    <section class="py-5 bg-white">
+        <div class="container py-4">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="faq-container">
+                        <div class="accordion" id="faqAccordion">
+                        
+                        <!-- SERVICIOS -->
+                        <div class="faq-item" data-category="servicios">
+                            <div class="faq-card">
+                                <h3 class="faq-header">
+                                    <button class="faq-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="false">
+                                        <div class="faq-icon">
+                                            <i class="fas fa-broom"></i>
+                                        </div>
+                                        <span class="faq-question">¿Qué servicios de limpieza ofrecen?</span>
+                                        <div class="faq-arrow">
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                    </button>
+                                </h3>
+                                <div id="faq1" class="faq-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="faq-body">
+                                        Ofrecemos una amplia gama de servicios: limpieza residencial, corporativa, limpieza profunda, desinfección especializada, limpieza de vidrios y ventanas, cocinas y baños especializados, y servicios de organización. Todos nuestros servicios son personalizables según sus necesidades específicas.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" data-category="servicios">
+                            <div class="faq-card">
+                                <h3 class="faq-header">
+                                    <button class="faq-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false">
+                                        <div class="faq-icon">
+                                            <i class="fas fa-clock"></i>
+                                        </div>
+                                        <span class="faq-question">¿Cuánto tiempo toma el servicio de limpieza?</span>
+                                        <div class="faq-arrow">
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                    </button>
+                                </h3>
+                                <div id="faq2" class="faq-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="faq-body">
+                                        El tiempo varía según el tipo y tamaño del espacio: apartamentos pequeños (2-3 horas), casas medianas (3-4 horas), casas grandes (4-6 horas), oficinas (según m²). La limpieza profunda puede tomar 50% más tiempo que una limpieza regular.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" data-category="productos">
+                            <div class="faq-card">
+                                <h3 class="faq-header">
+                                    <button class="faq-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false">
+                                        <div class="faq-icon">
+                                            <i class="fas fa-leaf"></i>
+                                        </div>
+                                        <span class="faq-question">¿Los productos son seguros para mascotas y niños?</span>
+                                        <div class="faq-arrow">
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                    </button>
+                                </h3>
+                                <div id="faq3" class="faq-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="faq-body">
+                                        Sí, utilizamos exclusivamente productos ecológicos, biodegradables y certificados como seguros para hogares con mascotas y niños. Contamos con certificación "Pet Friendly" y todos nuestros productos son de grado no tóxico, libres de químicos agresivos.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PRECIOS -->
+                        <div class="faq-item" data-category="precios">
+                            <div class="faq-card">
+                                <h3 class="faq-header">
+                                    <button class="faq-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false">
+                                        <div class="faq-icon">
+                                            <i class="fas fa-dollar-sign"></i>
+                                        </div>
+                                        <span class="faq-question">¿Cómo funcionan sus precios?</span>
+                                        <div class="faq-arrow">
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                    </button>
+                                </h3>
+                                <div id="faq4" class="faq-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="faq-body">
+                                        Nuestros precios se basan en: tamaño del espacio, tipo de servicio, frecuencia y estado inicial. Ofrecemos cotizaciones gratuitas sin compromiso. Los precios van desde $800 MXN para apartamentos pequeños hasta $1,800 MXN para casas grandes con servicio premium.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" data-category="precios">
+                            <div class="faq-card">
+                                <h3 class="faq-header">
+                                    <button class="faq-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false">
+                                        <div class="faq-icon">
+                                            <i class="fas fa-credit-card"></i>
+                                        </div>
+                                        <span class="faq-question">¿Qué métodos de pago aceptan?</span>
+                                        <div class="faq-arrow">
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                    </button>
+                                </h3>
+                                <div id="faq5" class="faq-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="faq-body">
+                                        Aceptamos efectivo, transferencia bancaria, tarjetas de crédito/débito (Visa, MasterCard), PayPal y Mercado Pago. Para servicios corporativos ofrecemos términos de pago a 15 días. Los servicios residenciales se pagan al completar el trabajo.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PROGRAMACIÓN -->
+                        <div class="faq-item" data-category="programacion">
+                            <div class="faq-card">
+                                <h3 class="faq-header">
+                                    <button class="faq-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6" aria-expanded="false">
+                                        <div class="faq-icon">
+                                            <i class="fas fa-calendar"></i>
+                                        </div>
+                                        <span class="faq-question">¿Con cuánta anticipación debo programar?</span>
+                                        <div class="faq-arrow">
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                    </button>
+                                </h3>
+                                <div id="faq6" class="faq-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="faq-body">
+                                        Recomendamos programar con al menos 24 horas de anticipación. Para servicios de emergencia, contáctenos y haremos nuestro mejor esfuerzo por acomodar su solicitud. Los servicios corporativos requieren mayor planificación.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" data-category="programacion">
+                            <div class="faq-card">
+                                <h3 class="faq-header">
+                                    <button class="faq-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq7" aria-expanded="false">
+                                        <div class="faq-icon">
+                                            <i class="fas fa-clock"></i>
+                                        </div>
+                                        <span class="faq-question">¿Cuáles son sus horarios de servicio?</span>
+                                        <div class="faq-arrow">
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                    </button>
+                                </h3>
+                                <div id="faq7" class="faq-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="faq-body">
+                                        Nuestros horarios regulares son: Lunes a Viernes de 8:00 a 18:00 hrs y Sábados de 9:00 a 14:00 hrs. Para servicios corporativos ofrecemos horarios extendidos y servicios fuera de horario laboral bajo solicitud especial.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" data-category="programacion">
+                            <div class="faq-card">
+                                <h3 class="faq-header">
+                                    <button class="faq-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq8" aria-expanded="false">
+                                        <div class="faq-icon">
+                                            <i class="fas fa-ban"></i>
+                                        </div>
+                                        <span class="faq-question">¿Puedo cancelar o reprogramar mi servicio?</span>
+                                        <div class="faq-arrow">
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                    </button>
+                                </h3>
+                                <div id="faq8" class="faq-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="faq-body">
+                                        Sí, puede cancelar o reprogramar: Con más de 24 horas de anticipación (sin cargo), con menos de 24 horas (25% del costo), el mismo día (50% del costo). No presentarse sin aviso incurre en el 100% del costo del servicio.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PRODUCTOS Y SEGURIDAD -->
+                        <div class="faq-item" data-category="productos">
+                            <div class="faq-card">
+                                <h3 class="faq-header">
+                                    <button class="faq-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq9" aria-expanded="false">
+                                        <div class="faq-icon">
+                                            <i class="fas fa-shield-alt"></i>
+                                        </div>
+                                        <span class="faq-question">¿Traen sus propios productos y equipos?</span>
+                                        <div class="faq-arrow">
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                    </button>
+                                </h3>
+                                <div id="faq9" class="faq-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="faq-body">
+                                        Sí, proporcionamos todos los productos de limpieza profesionales y equipos necesarios. Si prefiere que usemos productos específicos de su hogar, con gusto los utilizaremos. Nuestro equipo incluye aspiradoras industriales, mopas, productos especializados y herramientas profesionales.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" data-category="otros">
+                            <div class="faq-card">
+                                <h3 class="faq-header">
+                                    <button class="faq-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq10" aria-expanded="false">
+                                        <div class="faq-icon">
+                                            <i class="fas fa-key"></i>
+                                        </div>
+                                        <span class="faq-question">¿Necesito estar presente durante el servicio?</span>
+                                        <div class="faq-arrow">
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                    </button>
+                                </h3>
+                                <div id="faq10" class="faq-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="faq-body">
+                                        No es necesario. Muchos clientes nos confían las llaves de su hogar. Todo nuestro personal está verificado, asegurado y capacitado en protocolos de seguridad. Si prefiere estar presente, también es bienvenido.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" data-category="otros">
+                            <div class="faq-card">
+                                <h3 class="faq-header">
+                                    <button class="faq-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq11" aria-expanded="false">
+                                        <div class="faq-icon">
+                                            <i class="fas fa-undo"></i>
+                                        </div>
+                                        <span class="faq-question">¿Ofrecen garantía en sus servicios?</span>
+                                        <div class="faq-arrow">
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                    </button>
+                                </h3>
+                                <div id="faq11" class="faq-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="faq-body">
+                                        Sí, ofrecemos garantía de satisfacción del 100%. Si no está completamente satisfecho con el resultado, volveremos a realizar la limpieza sin costo adicional dentro de las 24 horas posteriores al servicio inicial.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" data-category="servicios">
+                            <div class="faq-card">
+                                <h3 class="faq-header">
+                                    <button class="faq-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq12" aria-expanded="false">
+                                        <div class="faq-icon">
+                                            <i class="fas fa-sync"></i>
+                                        </div>
+                                        <span class="faq-question">¿Ofrecen servicios recurrentes?</span>
+                                        <div class="faq-arrow">
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                    </button>
+                                </h3>
+                                <div id="faq12" class="faq-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="faq-body">
+                                        Sí, ofrecemos servicios semanales, quincenales y mensuales con descuentos especiales. Los clientes recurrentes reciben prioridad en programación y precios preferenciales. Ideal para mantener su hogar u oficina siempre impecable.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" data-category="otros">
+                            <div class="faq-card">
+                                <h3 class="faq-header">
+                                    <button class="faq-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq13" aria-expanded="false">
+                                        <div class="faq-icon">
+                                            <i class="fas fa-paw"></i>
+                                        </div>
+                                        <span class="faq-question">¿Qué significa que son "Pet Friendly"?</span>
+                                        <div class="faq-arrow">
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                    </button>
+                                </h3>
+                                <div id="faq13" class="faq-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="faq-body">
+                                        Significa que utilizamos productos 100% seguros para mascotas, nuestro personal está capacitado para trabajar con animales presentes, y tomamos precauciones especiales para no estresar a sus mascotas durante el proceso de limpieza.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" data-category="precios">
+                            <div class="faq-card">
+                                <h3 class="faq-header">
+                                    <button class="faq-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq14" aria-expanded="false">
+                                        <div class="faq-icon">
+                                            <i class="fas fa-calculator"></i>
+                                        </div>
+                                        <span class="faq-question">¿La cotización es gratuita?</span>
+                                        <div class="faq-arrow">
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                    </button>
+                                </h3>
+                                <div id="faq14" class="faq-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="faq-body">
+                                        Sí, todas las cotizaciones son completamente gratuitas y sin compromiso. Podemos dar estimados por teléfono o WhatsApp, o programar una visita gratuita para una cotización más precisa.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" data-category="otros">
+                            <div class="faq-card">
+                                <h3 class="faq-header">
+                                    <button class="faq-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq15" aria-expanded="false">
+                                        <div class="faq-icon">
+                                            <i class="fas fa-phone"></i>
+                                        </div>
+                                        <span class="faq-question">¿Cómo puedo contactarlos?</span>
+                                        <div class="faq-arrow">
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                    </button>
+                                </h3>
+                                <div id="faq15" class="faq-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="faq-body">
+                                        Puede contactarnos por teléfono al 449 138 2712, WhatsApp al mismo número, email a cielitoclean@cielitohome.com, o a través del formulario en nuestro sitio web. También puede visitarnos en nuestras oficinas en Potreros 509, Valle del Campestre.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- No results message -->
+                    <div id="noResults" class="text-center py-5" style="display: none;">
+                        <i class="fas fa-search text-muted mb-3" style="font-size: 3rem;"></i>
+                        <h3 class="text-muted">No se encontraron resultados</h3>
+                        <p class="text-muted">Intenta con otros términos de búsqueda o contactanos directamente.</p>
+                        <a href="contacto.html" class="btn btn-primary">
+                            <i class="fas fa-phone me-2"></i>Contactar Soporte
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="faq-cta-section py-5">
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="display-5 fw-bold mb-4">¿No encontraste tu respuesta?</h2>
+                    <p class="lead mb-4">Nuestro equipo está listo para ayudarte con cualquier duda específica sobre nuestros servicios</p>
+                    <div class="d-flex justify-content-center gap-3 flex-wrap">
+                        <a href="contacto.html" class="btn btn-accent btn-lg">
+                            <i class="fas fa-envelope me-2"></i>Enviar Consulta
+                        </a>
+                        <a href="https://wa.me/524491382712" class="btn btn-outline-light btn-lg">
+                            <i class="fab fa-whatsapp me-2"></i>WhatsApp
+                        </a>
+                        <a href="tel:4491382712" class="btn btn-outline-light btn-lg">
+                            <i class="fas fa-phone me-2"></i>Llamar
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-section">
+   <h3>Oficinas</h3>
+   <a href="https://www.google.com/maps/search/?api=1&query=Potreros+509,+Valle+del+Campestre,+20110+Aguascalientes,+Ags" target="_blank">
+       <i class="fas fa-map-marker-alt me-2"></i>Potreros 509, Valle del Campestre<br>20110 Aguascalientes, Ags.
+   </a>
+</div>
+                
+            
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <a href="tel:4491382712"><i class="fas fa-phone-alt me-2"></i> 449 138 2712</a>
+                <a href="mailto:cielitoclean@cielitohome.com"><i class="fas fa-envelope me-2"></i> cielitoclean@cielitohome.com</a>
+                <a href="#"><i class="fas fa-map-marker-alt me-2"></i> Aguascalientes, México</a>
+                <div class="mt-3">
+                    <!--<a href="#" class="me-2"><i class="fab fa-facebook-f fs-5"></i></a>-->
+                    <a href="https://www.instagram.com/cielitohomeclean/?igsh=MWZtMDdqNHR4eXM0cw%3D%3D#" class="me-2"><i class="fab fa-instagram fs-5"></i></a>
+                    <a href="https://wa.me/524491382712" class="me-2"><i class="fab fa-whatsapp fs-5"></i></a>
+                </div>
+            </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Servicios</h3>
+                <a href="servicios.html">Limpieza Residencial</a>
+                <a href="servicios.html">Limpieza Corporativa</a>
+                <a href="servicios.html">Limpieza Profunda</a>
+                <a href="servicios.html">Desinfección de Espacios</a>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Horario</h3>
+                <p><i class="far fa-clock me-2"></i> Lunes a Viernes: 8:00 - 16:00</p>
+                <p><i class="far fa-clock me-2"></i> Sábados: 9:00 - 14:00</p>
+                <h3 class="mt-4">Newsletter</h3>
+                <form class="mt-3">
+                    <div class="d-flex">
+                        <input type="email" class="form-control me-2" placeholder="Tu correo" style="border-radius: 25px;">
+                        <button class="btn btn-accent rounded-pill px-3" type="submit">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <div class="footer-bottom text-center">
+            <p>&copy; 2025 Cielito Home Clean. Todos los derechos reservados. | 
+            <a href="terminos.html" class="text-accent">Términos</a> | 
+            <a href="privacidad.html" class="text-accent">Privacidad</a> | 
+            <a href="faq.html" class="text-accent">FAQ</a></p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+    <script src="js/navbar.js"></script>
+    
+    <!-- FAQ Functionality -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const searchInput = document.getElementById('faqSearch');
+            const categoryButtons = document.querySelectorAll('[data-category]');
+            const faqItems = document.querySelectorAll('.faq-item');
+            const noResults = document.getElementById('noResults');
+
+            // Search functionality
+            searchInput.addEventListener('input', function() {
+                const searchTerm = this.value.toLowerCase();
+                filterFAQs(searchTerm, getActiveCategory());
+            });
+
+            // Category filtering
+            categoryButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Update active button
+                    categoryButtons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    const category = this.dataset.category;
+                    const searchTerm = searchInput.value.toLowerCase();
+                    filterFAQs(searchTerm, category);
+                });
+            });
+
+            function getActiveCategory() {
+                const activeButton = document.querySelector('[data-category].active');
+                return activeButton ? activeButton.dataset.category : 'all';
+            }
+
+            function filterFAQs(searchTerm, category) {
+                let visibleCount = 0;
+
+                faqItems.forEach(item => {
+                    const itemCategory = item.dataset.category;
+                    const text = item.textContent.toLowerCase();
+                    
+                    const matchesSearch = searchTerm === '' || text.includes(searchTerm);
+                    const matchesCategory = category === 'all' || itemCategory === category;
+                    
+                    if (matchesSearch && matchesCategory) {
+                        item.style.display = 'block';
+                        visibleCount++;
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+
+                // Show/hide no results message
+                noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+            }
+        });
+    </script>
+</body>
+</html>
